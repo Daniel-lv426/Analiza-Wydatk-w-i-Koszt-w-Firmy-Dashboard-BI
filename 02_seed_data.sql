@@ -1,0 +1,35 @@
+--
+Wstawianie wartości
+
+INSERT INTO surowe_dane_finansowe (id_transakcji, data_operacji, typ_dokumentu, kontrahent_pelna_nazwa, nip, kwota_netto, waluta, kategoria_opisowa, status, notatki_systemowe)
+VALUES
+('TRX-1001', '2026-01-10', 'Faktura', 'Firma XYZ Sp. z o.o. ', '521-30-22-111', '1250,50', 'PLN', 'Usługi informatyczne', 'Opłacona', 'Klient zapłacił z opóźnieniem'),
+('trx_1002', '10.01.2026', 'faktura', 'Firma XYZ Sp z o', '5213022111', '3400.00', 'PLN', 'usługi IT', 'PAID', NULL),
+('TRX-1003', '2026-01-12', 'KOSZT', 'Orlen S.A.', '7740001454', '230,00', 'PLN', 'paliwo do auta służbowego', 'Zaksięgowane', 'faktura wrzucona przez pracownika'),
+('TRX-1004', '2026-01-15', 'Faktura', 'ABC Logistyka', '118-00-00-281', '15890.99', 'EUR', 'Transport międzynarodowy', ' w toku ', 'Brak potwierdzenia dostawy'),
+('TRX-1005', '2026-01-16', 'korekta', 'Firma XYZ Sp. z o.o.', '521-30-22-111', '-250,50', 'PLN', 'Korekta ceny usługi IT', 'Opłacona', 'Zwrot części środków'),
+('TRX-1006', '2026-01-18', 'Koszt', 'ORLEN S.A', ' 774-00-0-1454 ', '150.5', 'ZŁ', 'Paliwo', 'zapłacone', 'Paragon z NIP'),
+('TRX-1007', '2026/01/20', 'FAKTURA', 'Global Tech Solutions', '5272848111', '45000,00', 'USD', 'Licencje roczne', 'Nieopłacone', 'Oczekiwanie na przelew walutowy'),
+('TRX-1008', '2026-01-22', 'Inne', 'Jan Kowalski Usługi', '9512034421', '1200.00', 'pln', NULL, 'PAID', 'Drobne prace remontowe - zlecenie bez umowy'),
+('TRX-1009', '2026-01-25', 'Faktura', 'ABC Logistyka ', '1180000281', '3200,00', 'EUR', 'Magazynowanie', 'Nieopłacone', 'Faktura wysłana pocztą'),
+('TRX-1010', ' 2026-01-26 ', 'koszt', 'Biuro Serwis', '525-11-22-333', '850.00', 'PLN', 'Materiały biurowe', 'opłacone', 'papier, tonery itp.'),
+('TRX-1011', '02.02.2026', 'Faktura', 'TechNet Polska Sp. z o.o.', '526-25-33-444', '12400,00', 'PLN', 'Hosting serwerów', 'Opłacona', 'Przelew podzielony (split payment)'),
+('TRX-1012', '2026-02-03', 'faktura', 'TechNet Polska', '5262533444', '12400.00', 'PLN', 'Hosting serwerów - luty', 'Nieopłacone', NULL),
+('TRX-1013', '2026-02-04', 'Koszt', 'Orlen S.A.', '7740001454', '310,20', 'PLN', 'Paliwo', 'Zaksięgowane', 'Karta flotowa'),
+('TRX-1014', '05-02-2026', 'FAKTURA', 'Poczta Polska Sp. z o.o.', '675-00-06-849', '450,00', 'PLN', 'Usługi pocztowe', 'zapłacone', 'Wysyłka listów poleconych'),
+('TRX-1015', '2026-02-08', 'korekta', 'ABC Logistyka', '1180000281', '-1200.00', 'EUR', 'Korekta stawki transportowej', 'Opłacona', 'Błąd w umowie głównej'),
+('TRX-1016', '2026/02/10', 'Faktura', 'Kancelaria Prawna Lex', '113-00-11-222', '6000,00', 'PLN', 'Doradztwo prawne', 'Częściowo opłacona', 'Opłacona tylko 1 rata'),
+('TRX-1017', '12.02.2026', 'Koszt', 'Media Expert Sp. z o.o.', '635-18-38-345', '2499.00', 'PLN', 'Sprzęt komputerowy', 'opłacone', 'Monitor do biura'),
+('TRX-1018', '2026-02-14', 'Faktura', 'Global Tech', '5272848111', '1500,00', 'USD', 'Wsparcie techniczne', 'Nieopłacone', NULL),
+('TRX-1019', '2026-02-15', 'Inne', 'Jan Kowalski Usługi', '9512034421', '850.00', 'PLN', 'Serwis ekspresu do kawy', 'PAID', 'Gotówka / kasa f-ma'),
+('TRX-1020', ' 2026-02-18 ', 'koszt', 'Castorama Polska', '118-00-58-290', '1420,50', 'ZŁ', 'Materiały remontowe', 'zapłacone', 'Farby, wkręty, narzędzia'),
+('TRX-1021', '2026-02-20', 'Faktura', 'Firma XYZ Sp. z o.o.', '5213022111', '8900.00', 'PLN', 'Audyt systemowy', 'Nieopłacone', 'Wysłano ponaglenie'),
+('TRX-1022', '22.02.2026', 'faktura', 'Eco Energy Sp z o o', '781-18-87-901', '3300,50', 'EUR', 'Energia elektryczna magazyn', 'Opłacona', 'Automatyczne pobranie z konta'),
+('TRX-1023', '2026-02-24', 'Koszt', 'ORLEN S.A.', '7740001454', '180,00', 'PLN', 'Paliwo', 'Zaksięgowane', NULL),
+('TRX-1024', '2026/02/25', 'FAKTURA', 'Biuro Serwis', '5251122333', '450.00', 'PLN', 'Środki czystości', 'opłacone', 'Faktura cykliczna'),
+('TRX-1025', '2026-02-28', 'korekta', 'TechNet Polska', '526-25-33-444', '-500,00', 'PLN', 'Korekta zużycia transferu', 'Opłacona', 'Rabat miesięczny'),
+('TRX-1026', '01.03.2026', 'Faktura', 'ABC Logistyka', '1180000281', '21500.00', 'EUR', 'Logistika kontraktowa', 'Nieopłacone', 'Oczekuje na akceptację'),
+('TRX-1027', '2026-03-02', 'Koszt', 'Kancelaria Prawna Lex', '1130011222', '3000.00', 'pln', 'Obsługa księgowa', 'zapłacone', NULL),
+('TRX-1028', '2026-03-04', 'Faktura', 'Global Tech Solutions', '5272848111', '12500,00', 'USD', 'Wdrożenie modułu API', ' w toku ', 'Etap 1 z 3'),
+('TRX-1029', '05.03.2026', 'Koszt', 'Media Expert Sp. z o.o.', '635-18-38-345', '499.00', 'PLN', 'Akcesoria biurowe', 'opłacone', 'Klawiatury, myszki'),
+('TRX-1030', '2026-03-06', 'Inne', 'Jan Kowalski Usługi', NULL, '600.00', 'PLN', 'Prace porządkowe', 'ANULOWANA', 'Zlecenie odwołane przez klienta');
