@@ -56,6 +56,11 @@ VAR AllKwotaStatus = CALCULATE([Całkowita kwota netto w PLN], REMOVEFILTERS(tra
 RETURN
 DIVIDE(KwotaStatus, AllKwotaStatus, 0)
 ```
+**Kalendarz:**
+```dax
+Kalendarz = 
+CALENDAR(MIN(transakcje[data_operacji]), MAX(transakcje[data_operacji]))
+```
 
 ---
 
