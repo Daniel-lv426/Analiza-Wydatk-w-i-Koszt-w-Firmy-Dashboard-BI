@@ -66,3 +66,12 @@ DIVIDE(KwotaStatus, AllKwotaStatus, 0)
 - `03_star_schema.sql` — transformacje.
 - `dashboard.pbix` — plik raportu Power BI.
 
+
+### Zrzuty ekranu z projektu:
+
+#### Podgląd raportu
+<img width="1315" height="742" alt="zrzut_ekranu_podglad_raportu" src="https://github.com/user-attachments/assets/8cbfa481-bf19-4fa8-8957-4aa7f97a81e4" />
+
+#### Model danych (relacje)
+<img width="1318" height="774" alt="zrzut_ekranu_relacje" src="https://github.com/user-attachments/assets/c457214d-0f5f-4327-b211-a1509df47825" />
+
