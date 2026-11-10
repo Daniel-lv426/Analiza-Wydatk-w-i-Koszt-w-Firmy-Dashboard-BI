@@ -28,7 +28,7 @@ Praca skupia się na dwóch głównych filarach:
 * **Top Kontrahentów:** ukazanie kluczowych dostawców generujących największe obciążenie budżetowe firmy wraz z ich udziałem procentowym.
 * **Kontrola statusów i walut:** monitorowanie transakcji opłaconych, w toku oraz anulowanych, a także struktura rozliczeń w walutach obcych (EUR, USD, PLN).
 
-###Utworzone miary DAX:
+### Utworzone miary DAX:
 
 **Całkowita kwota netto w PLN:**
 ```dax
