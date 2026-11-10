@@ -36,4 +36,4 @@ Praca skupia się na dwóch głównych filarach:
 - `02_seed_data.sql` — wprowadzanie surowych danych.
 - `03_star_schema.sql` — transformacje.
 - `dashboard.pbix` — plik raportu Power BI.
-- `zrzut_ekranu.png` - zrzut ekranu z widokiem na raport.
+
