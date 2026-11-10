@@ -28,6 +28,35 @@ Praca skupia się na dwóch głównych filarach:
 * **Top Kontrahentów:** ukazanie kluczowych dostawców generujących największe obciążenie budżetowe firmy wraz z ich udziałem procentowym.
 * **Kontrola statusów i walut:** monitorowanie transakcji opłaconych, w toku oraz anulowanych, a także struktura rozliczeń w walutach obcych (EUR, USD, PLN).
 
+###Utworzone miary DAX:
+
+**Całkowita kwota netto w PLN:**
+```dax
+Całkowita kwota netto w PLN = 
+SUMX(transakcje, transakcje[kwota_netto] * RELATED(waluty[kurs_do_pln]))
+```
+**Liczba transakcji:**
+```dax
+Liczba transakcji = 
+COUNTROWS(transakcje)
+```
+**Proc. udział kontrahenta:**
+```dax
+Proc. udział kontrahenta = 
+VAR Kwota = [Całkowita kwota netto w PLN]
+VAR CalaKwota = CALCULATE([Całkowita kwota netto w PLN], REMOVEFILTERS(kontrahenci[kontrahent]))
+RETURN
+DIVIDE(Kwota, CalaKwota, 0)
+```
+**Status - udział w całkowitej kwocie netto:**
+```dax
+Status - udział w całkowitej kwocie netto = 
+VAR KwotaStatus = [Całkowita kwota netto w PLN]
+VAR AllKwotaStatus = CALCULATE([Całkowita kwota netto w PLN], REMOVEFILTERS(transakcje[status]))
+RETURN
+DIVIDE(KwotaStatus, AllKwotaStatus, 0)
+```
+
 ---
 
 ## Struktura projektu
